@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav{
+    background:#111827;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#111827;
+    border-radius:5px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.container img{
+    display:block;
+    margin:20px auto;
+    border-radius:50%;
+    width:250px;
+    height:250px;
+}
+
+.container ul{
+    padding-left:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+    background:#fafafa;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#142a63;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media (max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .container img{
+        width:180px;
+        height:180px;
+    }
+}
